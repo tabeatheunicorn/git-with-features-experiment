@@ -9,8 +9,7 @@ def add(a: float|int, b: float|int) -> float|int:
 
 
 operations = [
-    Operation(name="Add", func=add),
-    Operation(name="Subtract", func=add)
+    Operation(name="Add", func=add)
 ]
     
 def get_operation_from_user() -> Operation:
