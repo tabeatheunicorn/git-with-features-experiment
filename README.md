@@ -48,12 +48,12 @@
 
 1. **Download the Tool**
 
-   Download [git_tool-1.0.0-py3-none-any.whl](https://drive.google.com/uc?export=download&id=1GZ9QkY53TlQqfT6Ckz9QegmVk8Nuj0Gg).
+   Download [git_tool](https://drive.google.com/uc?export=download&id=1GZ9QkY53TlQqfT6Ckz9QegmVk8Nuj0Gg).
 
 1. **Install the Tool**
 
    ```cmd
-   python -m pip install <prefix>/git_tool-1.0.0-py3-none-any.whl
+   python -m pip install <prefix>/git_tool-<version>-py3-none-any.whl
    ```
 
    **Note: Please use the path where your file is stored. On Windows systems, this will usually be the Downloads Folder.
