@@ -18,13 +18,13 @@
 
    Ensure that versions are displayed to confirm proper installation.
 
-1. **Clone the Repository**
+2. **Clone the Repository**
 
    ```cmd
    git clone https://github.com/tabeatheunicorn/git-with-features-experiment.git
    ```
 
-1. **Run the Python Script**
+3. **Run the Python Script**
 
    ```
    cd git-with-features-experiment
@@ -38,19 +38,11 @@
 
 ## 2. Setting Up the Tool
 
-1. **Fetch Required Branch**
-
-   The `feature-metadata` branch must be available locally:
-
-   ```cmd
-   git fetch origin feature-metadata
-   ```
-
 1. **Download the Tool**
 
    Download [git_tool](https://drive.google.com/uc?export=download&id=1GZ9QkY53TlQqfT6Ckz9QegmVk8Nuj0Gg).
 
-1. **Install the Tool**
+2. **Install the Tool**
 
    ```cmd
    python -m pip install <prefix>/git_tool-<version>-py3-none-any.whl
@@ -59,7 +51,7 @@
    **Note: Please use the path where your file is stored. On Windows systems, this will usually be the Downloads Folder.
    For this command, the path of execution won't matter.**
 
-1. **Test the Installation**
+3. **Test the Installation**
 
    - **Display Feature Commands**
 
@@ -83,9 +75,9 @@
      Branch feature-metadata successfully created.
      ```
 
-1. **Set Up Git Hooks**
-   The Hooks are needed for
-
+4. **Set Up Git Hooks**
+   
+   The hooks are required to ensure that feature information is added before committing files. This step can be skipped if you plan to add feature information only to existing commits using the `git feature-commit` command, bypassing the need for `git feature-add` and its subcommands. Information about the subcommands can be found [here](https://docs.google.com/document/d/1BoQP8FSRB7vCYs05UdXBuX9dW5ALBMzp5diTdYCP7BM/edit?usp=drive_link).
    - **Find the Tool Path**
 
      ```cmd
