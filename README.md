@@ -21,7 +21,7 @@
 2. **Clone the Repository**
 
    ```cmd
-   git clone https://github.com/tabeatheunicorn/git-with-features-experiment.git
+   git clone git@github.com:tabeatheunicorn/git-with-features-experiment.git
    ```
 
 3. **Run the Python Script**
