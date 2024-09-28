@@ -51,7 +51,17 @@
    **Note: Please use the path where your file is stored. On Windows systems, this will usually be the Downloads Folder.
    For this command, the path of execution won't matter.**
 
-3. **Test the Installation**
+   The installation process automatically places the scripts in a specific directory, and it's important that this directory is part of your system's PATH for Git to recognize the tool's commands.
+   - **Linux**
+     You may see a warning like this
+     ```bash
+     WARNING: The scripts git-feature-add, git-feature-blame, git-feature-commit, git-feature-commit-msg, git-feature-commits, git-feature-info, git-feature-pre-commit, and git-feature-status are installed in '/home/<user>/.local/bin' which is not on PATH.
+     ```
+     Please either copy all scripts starting with `git-` to a location in your `PATH` or add this folder to your `PATH`.
+   - **Windows**
+     The scripts are usually installed in the Scripts folder inside your Python installation directory (e.g., C:\Users\YourUsername\AppData\Local\Programs\Python\PythonXX\Scripts). Make sure this directory is included in your system’s `PATH`, or Git will not be able to recognize the installed commands.
+
+4. **Test the Installation**
 
    - **Display Feature Commands**
 
@@ -75,7 +85,7 @@
      Branch feature-metadata successfully created.
      ```
 
-4. **Set Up Git Hooks**
+5. **Set Up Git Hooks**
    
    The hooks are required to ensure that feature information is added before committing files. This step can be skipped if you plan to add feature information only to existing commits using the `git feature-commit` command, bypassing the need for `git feature-add` and its subcommands. Information about the subcommands can be found [here](https://docs.google.com/document/d/1BoQP8FSRB7vCYs05UdXBuX9dW5ALBMzp5diTdYCP7BM/edit?usp=drive_link).
    - **Find the Tool Path**
